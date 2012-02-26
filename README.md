@@ -38,3 +38,19 @@ Links
   https://github.com/ostinelli/misultin/tree/master/examples
 * Misultin End of Life -> 
   http://erlang.org/pipermail/erlang-questions/2012-February/064389.html
+
+TODO
+===============================================================================
+* Access Log
+* Multi-Part Upload
+* Comet
+* Compression
+* Cookies
+* File (binary save)
+* File Upload (differs from Multi-Part and from Post)
+* Multiple Servers (concurrently)
+* Redirect
+* Sessions
+* Static (or link to static project)
+* Stream
+* Websocket
