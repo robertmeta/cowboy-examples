@@ -1,7 +1,8 @@
 Quickstart
 ===============================================================================
-* Go into the cowboy directory and run "make" to build Cowboy.  This is 
-  dependent on three things: *make*, *rebar* and *git*
+* If you already have *make*, *rebar* and *git* in your path
+    * make && ./startit.sh
+    * run whatever server you want by starting it example -> helloworld:start()
 
 Notes
 ===============================================================================
