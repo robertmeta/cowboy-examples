@@ -4,7 +4,7 @@ Quickstart
     * make && ./startit
     * run whatever app you want by starting it -> helloworld:start()
     * check it out at http://localhost:8080
-* *NOTE:* Apps all run on :8080 except hello_world_ssl on :8443
+* *NOTE:* Apps all run on :8080 (so must be run one by one)
 
 What is this?
 ===============================================================================
@@ -32,6 +32,7 @@ Links
 ===============================================================================
 * Cowboy -> https://github.com/extend/cowboy
 * Cowboy Examples -> https://github.com/extend/cowboy_examples
+* Webmachine (what Cowboy REST clones) -> http://wiki.basho.com/Webmachine.html
 * Misultin -> https://github.com/ostinelli/misultin
 * Misultin Examples -> 
   https://github.com/ostinelli/misultin/tree/master/examples
