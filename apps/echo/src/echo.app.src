@@ -1,0 +1,14 @@
+{application, echo, [
+    {description, "Echo Example"},
+    {vsn, git},
+    {modules, []},
+    {registered, [echo_sup]},
+    {applications, [
+        kernel,
+        stdlib,
+        cowboy
+    ]},
+    {mod, {echo, []}},
+    {env, []}
+]}.
+
