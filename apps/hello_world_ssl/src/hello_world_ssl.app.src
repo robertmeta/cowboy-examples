@@ -6,6 +6,9 @@
     {applications, [
         kernel,
         stdlib,
+        crypto,
+        public_key,
+        ssl,
         cowboy
     ]},
     {mod, {hello_world_ssl, []}},
