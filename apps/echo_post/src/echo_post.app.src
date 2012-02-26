@@ -1,14 +1,14 @@
-{application, echo, [
-    {description, "Echo Example"},
+{application, echo_post, [
+    {description, "echo_post Example"},
     {vsn, git},
     {modules, []},
-    {registered, [echo_sup]},
+    {registered, [echo_post_sup]},
     {applications, [
         kernel,
         stdlib,
         cowboy
     ]},
-    {mod, {echo, []}},
+    {mod, {echo_post, []}},
     {env, []}
 ]}.
 

@@ -9,13 +9,16 @@ start(_Type, _Args) ->
     Dispatch = [
         {'_', [{'_', hello_world_ssl_handler, []}]}
     ],
+    cowboy:start_listener(my_http_listener, 1,
+        cowboy_tcp_transport, [{port, 8080}],
+        cowboy_http_protocol, [{dispatch, Dispatch}]
+    ),
     cowboy:start_listener(my_https_listener, 1,
         cowboy_ssl_transport, [
-            {port, 8080}, {certfile, "priv/ssl/cert.pem"},
+            {port, 8443}, {certfile, "priv/ssl/cert.pem"},
             {keyfile, "priv/ssl/key.pem"}, {password, "cowboy"}],
         cowboy_http_protocol, [{dispatch, Dispatch}]
     ).
 
 stop() ->
-    application:stop(hello_world_ssl),
     application:stop(cowboy).

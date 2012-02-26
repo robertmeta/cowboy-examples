@@ -1,13 +1,13 @@
--module(echo).
+-module(echo_get).
 -export([start/0, start/2, stop/0]).
 
 start() ->
     application:start(cowboy),
-    application:start(echo).
+    application:start(echo_get).
 
 start(_Type, _Args) ->
     Dispatch = [
-        {'_', [{'_', echo_handler, []}]}
+        {'_', [{'_', echo_get_handler, []}]}
     ],
     cowboy:start_listener(my_http_listener, 1,
         cowboy_tcp_transport, [{port, 8080}],
@@ -15,5 +15,4 @@ start(_Type, _Args) ->
     ).
 
 stop() ->
-    application:stop(echo),
     application:stop(cowboy).

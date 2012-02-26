@@ -4,7 +4,7 @@ Quickstart
     * make && ./startit
     * run whatever app you want by starting it -> helloworld:start()
     * check it out at http://localhost:8080
-* *NOTE:* Apps all run on :8080 (even SSL) -- and must be run one by one
+* *NOTE:* Apps all run on :8080 except hello_world_ssl on :8443
 
 What is this?
 ===============================================================================

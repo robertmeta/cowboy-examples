@@ -1,4 +1,4 @@
--module(echo_sup).
+-module(echo_get_sup).
 -behaviour(supervisor).
 -export([init/1, start_link/0]).
 

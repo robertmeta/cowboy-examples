@@ -1,0 +1,14 @@
+{application, echo_get, [
+    {description, "echo_get Example"},
+    {vsn, git},
+    {modules, []},
+    {registered, [echo_get_sup]},
+    {applications, [
+        kernel,
+        stdlib,
+        cowboy
+    ]},
+    {mod, {echo_get, []}},
+    {env, []}
+]}.
+
