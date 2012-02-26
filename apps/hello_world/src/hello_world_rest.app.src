@@ -1,0 +1,14 @@
+{application, hello_world_rest, [
+    {description, "Hello World Rest Example"},
+    {vsn, git},
+    {modules, []},
+    {registered, [hello_world_rest_sup]},
+    {applications, [
+        kernel,
+        stdlib,
+        cowboy
+    ]},
+    {mod, {hello_world_rest, []}},
+    {env, []}
+]}.
+
