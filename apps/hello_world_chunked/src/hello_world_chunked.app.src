@@ -1,0 +1,14 @@
+{application, hello_world_chunked, [
+    {description, "Hello World Example"},
+    {vsn, git},
+    {modules, []},
+    {registered, [hello_world_chunked_sup]},
+    {applications, [
+        kernel,
+        stdlib,
+        cowboy
+    ]},
+    {mod, {hello_world_chunked, []}},
+    {env, []}
+]}.
+
