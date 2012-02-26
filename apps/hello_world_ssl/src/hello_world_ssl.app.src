@@ -1,0 +1,14 @@
+{application, hello_world_ssl, [
+    {description, "Hello World SSL Example"},
+    {vsn, git},
+    {modules, []},
+    {registered, [hello_world_ssl_sup]},
+    {applications, [
+        kernel,
+        stdlib,
+        cowboy
+    ]},
+    {mod, {hello_world_ssl, []}},
+    {env, []}
+]}.
+

@@ -1,6 +1,6 @@
 #!/bin/sh
 
 erl \
- -pa deps/cowboy/ebin \
- -pa apps/hello_world/ebin \
+ -pa deps/*/ebin \
+ -pa apps/*/ebin \
  -boot start_sasl
