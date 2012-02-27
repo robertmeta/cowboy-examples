@@ -14,10 +14,13 @@ start(_Type, _Args) ->
     ],
     cowboy:start_listener(my_https_listener, 1,
         cowboy_ssl_transport, [
-            {port, 8080}, {certfile, "priv/ssl/cert.pem"},
-            {keyfile, "priv/ssl/key.pem"}, {password, "cowboy"}],
+            {port, 8080}, {certfile, priv()++"/ssl/cert.pem"},
+            {keyfile, priv()++"/ssl/key.pem"}, {password, "cowboy"}],
         cowboy_http_protocol, [{dispatch, Dispatch}]
     ).
 
 stop() ->
     application:stop(cowboy).
+
+priv() ->
+    code:priv_dir(hello_world_ssl).
