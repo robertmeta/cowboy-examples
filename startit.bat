@@ -5,6 +5,7 @@ erl ^
  -pa apps/hello_world_rest/ebin ^
  -pa apps/hello_world_chunked/ebin ^
  -pa apps/access_log/ebin ^
+ -pa apps/upload/ebin ^
  -pa apps/echo_get/ebin ^
  -pa apps/echo_post/ebin ^
  -boot start_sasl 
