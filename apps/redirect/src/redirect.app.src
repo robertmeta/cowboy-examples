@@ -1,0 +1,14 @@
+{application, redirect, [
+    {description, "Redirect Example"},
+    {vsn, git},
+    {modules, []},
+    {registered, [redirect_sup]},
+    {applications, [
+        kernel,
+        stdlib,
+        cowboy
+    ]},
+    {mod, {redirect, []}},
+    {env, []}
+]}.
+

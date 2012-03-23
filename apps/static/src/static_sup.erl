@@ -1,4 +1,4 @@
--module(access_log_sup).
+-module(static_sup).
 -behaviour(supervisor).
 -export([init/1, start_link/0]).
 

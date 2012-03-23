@@ -42,15 +42,11 @@ Links
 TODO
 ===============================================================================
 * Access Log
-* Multi-Part Upload
 * Comet
 * Compression
 * Cookies
 * File (binary save)
-* File Upload (differs from Multi-Part and from Post)
 * Multiple Servers (concurrently)
-* Redirect
 * Sessions
-* Static (or link to static project)
 * Stream
 * Websocket

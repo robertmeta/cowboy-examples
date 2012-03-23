@@ -1,0 +1,14 @@
+{application, static, [
+    {description, "Static Serving Example"},
+    {vsn, git},
+    {modules, []},
+    {registered, [static_sup]},
+    {applications, [
+        kernel,
+        stdlib,
+        cowboy
+    ]},
+    {mod, {static, []}},
+    {env, []}
+]}.
+

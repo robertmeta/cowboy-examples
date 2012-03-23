@@ -8,4 +8,6 @@ erl ^
  -pa apps/upload/ebin ^
  -pa apps/echo_get/ebin ^
  -pa apps/echo_post/ebin ^
+ -pa apps/static/ebin ^
+ -pa apps/redirect/ebin ^
  -boot start_sasl 
