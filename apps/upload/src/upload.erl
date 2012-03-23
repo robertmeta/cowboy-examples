@@ -3,7 +3,7 @@
 
 start() ->
     application:start(cowboy),
-    application:start(hello_world).
+    application:start(upload).
 
 start(_Type, _Args) ->
      Dispatch = [

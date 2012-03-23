@@ -5,8 +5,15 @@ init({tcp, http}, Req, _Opts) ->
     {ok, Req, undefined_state}.
 
 handle(Req, State) ->
-    {ok, Reply} = cowboy_http_req:reply(200, [], 
-        <<"Hello World!">>
+    HtmlContentType = {<<"Content-Type">>, <<"text/html">>},
+    {ok, Reply} = cowboy_http_req:reply(200, [HtmlContentType], 
+        <<"
+        <html><form action='/upload' method='POST'
+        enctype='multipart/form-data'>
+        <input type='file' name='file'><br>
+        <input type='submit'>
+        </form></html>
+        ">>
     , Req),
     {ok, Reply, State}.
 
