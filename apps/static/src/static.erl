@@ -7,7 +7,15 @@ start() ->
 
 start(_Type, _Args) ->
     Dispatch = [
-        {'_', [{'_', static_handler, []}]}
+        {'_', [
+                {[<<"static_resource">>, '...'], cowboy_http_static, [
+                    {directory, priv()++"/www"},
+                    {mimetypes, [
+                        {<<".jpg">>, [<<"image/jpeg">>]}
+                    ]}
+                ]},
+            {'_', static_handler, []}
+        ]}
     ],
     cowboy:start_listener(my_http_listener, 1,
         cowboy_tcp_transport, [{port, 8080}],
@@ -16,3 +24,6 @@ start(_Type, _Args) ->
 
 stop() ->
     application:stop(cowboy).
+
+priv() ->
+    code:priv_dir(static).
