@@ -5,7 +5,7 @@ init({ssl, http}, Req, _Opts) ->
     {ok, Req, undefined_state}.
 
 handle(Req, State) ->
-    {ok, Reply} = cowboy_http_req:reply(200, [], <<"Hello World!">>, Req),
+    {ok, Reply} = cowboy_http_req:reply(200, [], <<"Hello World, SSL!">>, Req),
     {ok, Reply, State}.
 
 terminate(_Req, _State) ->

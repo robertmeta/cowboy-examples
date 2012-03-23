@@ -8,7 +8,9 @@ handle(Req, State) ->
     {ok, Reply} = cowboy_http_req:chunked_reply(200, Req),
     cowboy_http_req:chunk("Hello\r\n", Reply),
     timer:sleep(1000),
-    cowboy_http_req:chunk("World!", Reply),
+    cowboy_http_req:chunk("World, ", Reply),
+    timer:sleep(1000),
+    cowboy_http_req:chunk("Chunked!", Reply),
     {ok, Reply, State}.
 
 terminate(_Req, _State) ->

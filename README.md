@@ -42,7 +42,7 @@ Examples List
 Links
 ===============================================================================
 * Cowboy -> https://github.com/extend/cowboy
-* Cowboy Examples -> https://github.com/extend/cowboy_examples
+* Cowboy Examples -> https://github.com/extend/cowboy\_examples
 * Webmachine (what Cowboy REST clones) -> http://wiki.basho.com/Webmachine.html
 * Misultin -> https://github.com/ostinelli/misultin
 * Misultin Examples -> 
@@ -52,10 +52,11 @@ Links
 
 TODO
 ===============================================================================
-* Access Log
+* Access Log -> Hard to do right now due to lack of a good place to hook
 * Comet
 * Compression
 * Cookies
+* EventSource
 * File (binary save)
 * Multiple Servers (concurrently)
 * Sessions
