@@ -28,6 +28,17 @@ going to worry too much about that and just label it "bonus learning"!
 Each application was designed as an island able to be run completely seperate 
 from the other applications (but obviously still has dependancies on cowboy).
 
+Examples List
+===============================================================================
+* echo\_get -> Dealing with querystring data
+* echo\_post -> Dealing with posted data
+* hello\_world -> Start here! 
+* hello\_world\_chunked -> Shows serving a reply in chunks
+* hello\_world\_rest -> Show the RESTful upgrade / handler in Cowboy
+* hello\_world\_ssl -> Show the simpliest SSL app
+* redirect -> Show a basic redirect using a header
+* static -> Show the static handler in Cowboy
+
 Links
 ===============================================================================
 * Cowboy -> https://github.com/extend/cowboy
